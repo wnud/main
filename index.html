@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W.N's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="desktop-icons">
+        <div class="desktop-icon" onclick="openWindow('home')">
+            <div>💻</div>
+            <div class="icon-label">home</div>
+        </div>
+        <div class="desktop-icon" onclick="openWindow('projects')">
+            <div>📁</div>
+            <div class="icon-label">projects</div>
+        </div>
+        <div class="desktop-icon" onclick="openWindow('silly-business')">
+            <div>🗑️</div>
+            <div class="icon-label">silly business</div>
+        </div>
+        <div class="desktop-icon" onclick="openWindow('about')">
+            <div>⚙️</div>
+            <div class="icon-label">about</div>
+        </div>
+        <div class="desktop-icon" onclick="openWindow('contacts')">
+            <div>🌐</div>
+            <div class="icon-label">contacts</div>
+        </div>
+        <div class="desktop-icon" onclick="openWindow('artwork')">
+            <div>📂</div>
+            <div class="icon-label">artwork</div>
+        </div>
+        <div class="desktop-icon" onclick="openWindow('writing')">
+            <div>📝</div>
+            <div class="icon-label">writing</div>
+        </div>
+        <div class="desktop-icon" onclick="openWindow('advert')">
+            <div>📺</div>
+            <div class="icon-label">advert</div>
+        </div>
+    </div>
+
+    <div class="window" id="home-window" style="top: 100px; left: 100px; width: 400px; height: 400px;">
+        <div class="title-bar" id="home-title">
+            <div class="title-text">💻 Home </div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('home')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('home')">□</button>
+                <button class="window-btn" onclick="closeWindow('home')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <h3>Welcome!</h3>
+                        <div class="small"><br>welcome to my portfolio page! here you can find my previously completed projects and collaborations. all windows are draggable. click around and explore! <br>
+                            <br><br>
+                        <p><img src="https://64.media.tumblr.com/7874cbe162826780109aff0bcc4199d4/abe61cd217bd2003-97/s250x400/725a33f5af175014fe097f9a730a1fbc555bd1d4.gifv" style="max-width: 150px"></p>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window hidden" id="projects-window" style="top: 120px; left: 150px; width: 450px; height: 350px;">
+        <div class="title-bar" id="projects-title">
+            <div class="title-text">📁 Projects</div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('projects')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('projects')">□</button>
+                <button class="window-btn" onclick="closeWindow('projects')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <h3>Projects</h3>
+                    <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/game1.png" class="card-img-top" alt="Game1">
+                            <div class="desc"> Puzzle-Solving Platformer. </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/game2.png" class="card-img-top" alt="Game2">
+                            <div class="desc"> First-Person Horror Collect-a-thon. </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/game3.jpg" class="card-img-top" alt="Game3">
+                            <div class="desc"> "Fool's Gold" Pokemon ROM hack contributer. </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="status-bar mt-10">
+                    <div>3 object(s)</div>
+                    <div>123 KB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window hidden" id="about-window" style="top: 100px; left: 250px; width: 500px; height: 400px;">
+        <div class="title-bar" id="about-title">
+            <div class="title-text">⚙️ About</div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('about')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('about')">□</button>
+                <button class="window-btn" onclick="closeWindow('about')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <h3>About</h3>
+                <br><div class="small">><p>hello!! i go by <i>Wes</i>, or <i>dysmori.</i> i'm a 23 year old south african game developer attempting to be a clown-of-all-trades hehe. <br><br> my tastes are both cute <img src="https://64.media.tumblr.com/cfe5090b0edf0e695621e051ee6a0135/fecbcebcddfc530b-9c/s75x75_c1/4e490efaab46f6e9ad6918c179371073c78b6e41.gifv" style="max-width: 20px"> and horrifying <img src="https://64.media.tumblr.com/7723e883ed36b472998626006b7764a9/7cc0951df855f33f-0c/s75x75_c1/35dd6018064c65df4b5491a0dc4eab7b6a369763.gifv" style="max-width: 20px">, and it reflects in my work for sure. if you're interested in working together, please contact me!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="window hidden" id="silly-business-window" style="top: 150px; left: 200px; width: 350px; height: 250px;">
+        <div class="title-bar" id="silly-business-title">
+            <div class="title-text">🗑 Silly Business</div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('silly-business')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('silly-business')">□</button>
+                <button class="window-btn" onclick="closeWindow('silly-business')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <h3>silly business is afoot...</h3>
+                <br><div class="small"><p><img src="./Assets/silly goofy mood.png" style="max-width: 150px"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window hidden" id="contacts-window" style="top: 120px; left: 300px; width: 600px; height: 400px;">
+        <div class="title-bar" id="contacts-title">
+            <div class="title-text">🌐 Contact Info</div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('contacts')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('contacts')">□</button>
+                <button class="window-btn" onclick="closeWindow('contacts')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <div style="height: 250px; overflow-y: auto; border: 2px inset #c0c0c0; margin-top: 10px; padding: 10px; background: white; font-size: 12px;">
+                    <h2>Get in Contact!</h2>
+                    <h3>info</h3>
+                    <p>discord: dysmori</p>
+                    <p>itch: <a href="https://dysmori.itch.io/" target="_blank"> dysmori.itch.io</a></p>
+                    <p>twitter/x: <a href="https://x.com/dysmori" target="_blank"> x.com/dysmori</a></p>
+                    <p>email: dysmori@yahoo.com</p>
+                    <p>carrier pigeon: unavailable. has rabies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="window hidden" id="artwork-window" style="top: 140px; left: 220px; width: 550px; height: 350px;">
+        <div class="title-bar" id="artwork-title">
+            <div class="title-text">📂 Artwork</div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('artwork')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('artwork')">□</button>
+                <button class="window-btn" onclick="closeWindow('artwork')">×</button>
+            </div>
+        </div>
+
+        <div class="window-content">
+            <div class="window-content-inner">
+                <h3>Artwork</h3>
+                    <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/my-art/mina Colour Yay Yuppppp.png" class="card-img-top" alt="Mina">
+                            <div class="desc"> Mina Ha from Valve's <i>Deadlock.</i> </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/my-art/mion .png" class="card-img-top" alt="Mion">
+                            <div class="desc"> Mion Character Sheet. </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/my-art/amogus.png" class="card-img-top" alt="Lucina">
+                            <div class="desc"> Lucina Character Concept. </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/my-art/LEVEL1COLOUR.png" class="card-img-top" alt="Level">
+                            <div class="desc"> Level Concept. </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/my-art/bigconcept background.png" class="card-img-top" alt="SplashArt">
+                            <div class="desc"> Splash Art Concept. </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./Assets/my-art/twinpeaksstudy.png" class="card-img-top" alt="TwinPeaks">
+                            <div class="desc"> <i>Twin Peaks (1992)</i> Still Study. </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                <div class="status-bar mt-10">
+                    <div>6 object(s)</div>
+                    <div>784 KB</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window hidden" id="writing-window" style="top: 200px; left: 300px; width: 450px; height: 350px;">
+        <div class="title-bar" id="writing-title">
+            <div class="title-text">📝 writing</div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('writing')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('writing')">□</button>
+                <button class="window-btn" onclick="closeWindow('writing')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <textarea style="width: 500%; height: 500px; border: none; font-family: 'Courier New', monospace; font-size: 14px; resize: none;" placeholder="Type your text here...">
+ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⠤⠤⠤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡤⠾⠯⠷⢦⣄⣀⠀⠀⣠⠞⠋⠀⠀⠀⠀⠀⠈⠉⠹⢷⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡼⠋⠁⠀⠀⠀⠀⠀⠈⠉⠓⢾⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣠⣾⣧⠀⣸⣿⣦⠀⠀⠀⠀⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡟⠀⠀⠀⠀⠀⠀⠀⣶⣶⣦⣄⠀⠀⠀⠘⣿⣿⣿⣶⣿⣿⣿⡇⠀⠀⠀⠀⠸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⢰⣷⣄⣹⣿⣿⣿⣷⡀⠀⠀⢸⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⢿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣽⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⢸⣿⣿⣿⣿⣿⡿⠁⠀⠀⠀⠀⣸⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⠛⡆⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⢰⠙⠛⠛⠛⠉⠀⠀⠀⠀⠀⣰⠃⠙⢿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡟⠁⠀⢳⡀⠀⠀⠀⠀⠈⠻⠿⣿⡿⠟⠁⠀⠀⢀⡾⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡃⠀⠀⠈⠻⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣾⠏⠀⠀⠀⠀⣳⣄⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⢀⠞⠣⣄⣀⡀⠀⣀⣀⠤⠖⠉⠀⠀⠀⠀⠀⠀⠙⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣾⠏⠀⠀⠀⠀⠀⠈⠀⠀⠈⠉⠻⢷⣦⡀⠀⠀⣀⡴⠋⠀⠀⠀⠀⠉⠉⠉⠀⠀⣠⡴⠆⠀⠀⠀⠀⠀⠀⠈⢿⣆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣼⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣶⡾⠷⠛⠛⠛⠛⠻⠿⠷⣶⣦⣤⣾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣆⠀⠀⠀⠀⠀⠀
+⠀⢀⣀⠀⠀⢰⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣧⠀⣠⣦⡀⠀⠀⠀⣠⣿⣿⣿⣏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡆⠀⠀⠀⠀⠀
+⣼⣿⠟⠻⠷⢾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢤⣄⣀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣿⣿⣿⣿⣿⣷⣤⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⢹⣾⣿⣿⡿⣷⡆⠀
+⢻⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⡿⠁
+⠈⢿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⠏⠀
+⠀⠈⢿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠃⠀⠀
+⠀⠀⠈⢿⣳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⢼⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⡟⠁⠀⠀⠙⠉⠉⠻⢿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠇⠀⠀⠀
+⠀⠀⠀⠀⠘⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⢻⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣏⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡟⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠘⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡝⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠸⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣼⠀⠀⠀⢀⡀⢀⣤⡀⣠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢹⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣦⣠⠏⠁⠙⠛⢀⣼⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡏⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⣶⣦⣤⡶⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⡟⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠿⣷⡄⠀⠀⠀⠀⣤⣤⣤⣤⣤⣤⣴⣶⣾⡿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⡄⠀⠀⢀⣿⠉⢿⢿⣿⣿⣿⢿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠿⣶⣤⣾⠏⠀⠀⢿⣿⣿⡟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+        <div class="window hidden" id="advert-window" style="top: 100px; left: 100px; width: 400px; height: 400px;">
+        <div class="title-bar" id="advert-title">
+            <div class="title-text">📺 Advert </div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="minimizeWindow('advert')">_</button>
+                <button class="window-btn" onclick="maximizeWindow('advert')">□</button>
+                <button class="window-btn" onclick="closeWindow('advert')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <h3>ADVERT</h3>
+                        <div class="small"><br>! Unsponsored Advertisement !<br>
+                            <br><br>
+                        <p><img src="./Assets/GFBQqWJXwAAA-Eo.jpg" style="max-width: 70%"></p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <button class="start-btn" onclick="toggleStartMenu()">
+            <span>🪟</span>
+            Start
+        </button>
+        <div class="taskbar-items" id="taskbarItems">
+
+        </div>
+        <div class="system-tray">
+            <div id="clock">12:00 PM</div>
+            <div>🔊</div>
+            <div>🌐</div>
+        </div>
+    </div>
+
+    <div class="window hidden" id="start-menu" style="bottom: 40px; left: 0; width: 250px; height: 400px; position: fixed;">
+        <div class="title-bar">
+            <div class="title-text">Windows</div>
+            <div class="window-controls">
+                <button class="window-btn" onclick="closeWindow('start-menu')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-inner">
+                <div style="padding: 10px 0;">
+                    <div style="padding: 5px 10px; background: #000080; color: white; font-weight: bold;"> Windows </div>
+                    <div style="padding: 10px;">
+                        <div onclick="openWindow('home'); closeWindow('start-menu')" style="padding: 5px; cursor: pointer;">💻 home</div>
+                        <div onclick="openWindow('projects'); closeWindow('start-menu')" style="padding: 5px; cursor: pointer;">📁 projects</div>
+                        <div onclick="openWindow('about'); closeWindow('start-menu')" style="padding: 5px; cursor: pointer;">⚙️ about</div>
+                        <div onclick="openWindow('artwork'); closeWindow('start-menu')" style="padding: 5px; cursor: pointer;">📂 artwork</div>
+                        <hr style="margin: 10px 0; border-color: #c0c0c0;">
+                        <div onclick="openWindow('writing'); closeWindow('start-menu')" style="padding: 5px; cursor: pointer;">📝 writing</div>
+                        <hr style="margin: 10px 0; border-color: #c0c0c0;">
+                        <div onclick="alert('Shutting down...')" style="padding: 5px; cursor: pointer;">⏻ Shut Down...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">X</span>
+    <img id="modalImage" class="modal-content">
+    <div id="modalCaption"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./JS/script.js"></script>
+</body>
+</html>
